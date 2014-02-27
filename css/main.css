@@ -14,7 +14,7 @@ html {
 body {
     padding-top: 20px;
     font-size: 16px;
-    font-family: "Open Sans", serif;
+    font-family: SteelfishLtRegular, Arial, sans-serif;
     background: transparent;
 }
 
@@ -37,11 +37,17 @@ body {
 
 .sign {
     width: 100px;
+    background-color: rgba(0, 0, 100, .6);
+    color: rgba(255, 255, 255, 1);
+    font-weight: bold;
+    border: 2px solid rgba(0, 0, 100, 0.5);
 }
 
-.btn {
-    background-color: rgba(255, 255, 255, 0);
-    color: rgba(0, 0, 0, 1);
-    font-weight: bold;
-    border:1.5px solid rgba(0, 150, 0, 0.5);
+h1 {
+    font-weight: 800;
+    font-size: 50px;
+}
+
+.margin-base-vertical {
+    margin: 35px 0;
 }
