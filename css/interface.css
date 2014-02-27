@@ -28,7 +28,7 @@ body {
 }
 
 .center {
-    display: table
+    display: table;
     width: auto;
     margin-left: auto;
     margin-right: auto;
