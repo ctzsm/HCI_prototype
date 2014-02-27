@@ -8,7 +8,7 @@ html {
 
 body {
     padding-top: 20px;
-    font-size: 28px;
+    font-size: 30px;
     font-family: SteelfishLtRegular, Arial, sans-serif;
     background: transparent;
 }
@@ -59,4 +59,8 @@ h1 {
     -webkit-border-radius: 8px;
        -moz-border-radius: 8px;
             border-radius: 8px; */
+}
+
+.tab-width {
+    width: 100%;
 }
