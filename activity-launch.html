@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Schedule Your Life</title>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Google fonts -->
+    <script>
+    WebFontConfig = {
+        google: {
+            families: ["Karla:400,400italic,700,700italic"]
+        },
+        custom: {
+            families: ["SteelfishLtRegular"],
+            urls: ["css/fonts.css"]
+        }
+    };
+    (function() {
+        var wf = document.createElement("script");
+        wf.src = ("https:" == document.location.protocol ? "https" : "http") + "://ajax.googleapis.com/ajax/libs/webfont/1.4.2/webfont.js";
+        wf.type = "text/javascript";
+        wf.async = "true";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(wf, s)
+    })();
+    $(function() {
+        $("#include_navBar").load("navbar.html");
+    });
+    </script>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/interface.css" rel="stylesheet">
+    <link href="css/bootstrap-social.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+</head>
+
+<body>
+    <!-- This is a templete, do any thing between this line and the next comment line -->
+    <div class="span4 text-center">
+        <div class="btn-group btn-group-vertical panel panel-default margin-base-vertical">
+            <div class="btn-toolbar">
+                <div class="btn-group btn-group-lg">
+                    <button type="submit" class="btn btn-xlarge btn-primary sign" class="btn btn-xlarge btn-primary sign">Launch New!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <form role="form">
+        <div class="form-group">
+            <label>Host Name</label>
+            <input type="name" class="form-control" id="Name" placeholder="Enter Name(Nickname)">
+        </div>
+        <div class="form-group">
+            <label>*Activity Title</label>
+            <input type="title" class="form-control" id="Title" placeholder="Enter Title">
+        </div>
+        <div class="form-group">
+            <label>*Email address</label>
+            <input type="email" class="form-control" id="Email" placeholder="Enter Email">
+        </div>
+        <div class="form-group">
+            <label>*Telephone:</label>
+            <input type="telephone" class="form-control" id="Tel" placeholder="Enter Tel#">
+        </div>
+        <div class="form-group">
+            <label>*Location</label>
+            <input type="location" class="form-control" id="Location" placeholder="Enter Location">
+        </div>
+        <div class="form-group">
+            <label>Tag</label>
+            <input type="tag" class="form-control" id="Tag" placeholder="Enter Tag">
+        </div>
+        <div class="form-group">
+            <label>*Capacity</label>
+            <input type="capacity" id="Capacity">
+        </div>
+         <div class="form-group">
+            <label>Activity Description(300 characters)</label>
+            <textarea class="form-control" rows="3"></textarea>
+        </div>
+        <div class="form-group">
+            <label>Picture Upload</label>
+            <input type="file" id="Picture">
+            <br>
+            <p class="help-block">* is required.</p>
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox"> Check me out
+            </label>
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+    <!-- DO NOT MODIFY THOSE FOLLOWING -->
+    <div id="include_navBar"></div>
+</body>
+
+</html>
