@@ -7,6 +7,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Schedule Your Life</title>
 
+
+
+    <script>
+    WebFontConfig = {
+        google: {
+            families: ["Karla:400,400italic,700,700italic"]
+        },
+        custom: {
+            families: ["SteelfishLtRegular"],
+            urls: ["css/fonts.css"]
+        }
+    };
+    (function() {
+        var wf = document.createElement("script");
+        wf.src = ("https:" == document.location.protocol ? "https" : "http") + "://ajax.googleapis.com/ajax/libs/webfont/1.4.2/webfont.js";
+        wf.type = "text/javascript";
+        wf.async = "true";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(wf, s)
+    })();
+    </script>
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -31,6 +53,55 @@
 </head>
 
 <body>
+
+    <div class="span4 text-center">
+        <div>Ask for official help from school, usually need 2 days to come:</div>
+        <div class="btn-group btn-group-vertical panel panel-default margin-base-vertical">
+            <div class="btn-toolbar">
+                <div class="btn-group btn-group-lg">
+                    <button type="submit" class="btn btn-xlarge btn-primary" onclick="location.href='interface.html'">
+                    <span class="glyphicon glyphicon-user"> Maintenance-Request</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="span4 text-center">
+        <div>Search for the frequently asked questions & answers:</div>
+        <div class="btn-group btn-group-vertical panel panel-default margin-base-vertical">
+            <div class="btn-toolbar">
+                <div class="btn-group btn-group-lg">
+                    <button type="submit" class="btn btn-xlarge btn-primary" onclick="location.href='interface.html'">
+                    <span class="glyphicon glyphicon-search"> Problems&Solutions</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="span4 text-center">
+    <div>Ask for help from the students living in the same apartment:</div>
+        <div class="btn-group btn-group-vertical panel panel-default margin-base-vertical">
+            <div class="btn-toolbar">
+                <div class="btn-group btn-group-lg">
+        <button type="submit" class="btn btn-xlarge btn-primary" onclick="location.href='interface.html'">
+        <span class="glyphicon glyphicon-refresh"> Ask-for-help</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="span4 text-center">
+    <div>Join to help the students living in the same apartment:</div>
+        <div class="btn-group btn-group-vertical panel panel-default margin-base-vertical">
+            <div class="btn-toolbar">
+                <div class="btn-group btn-group-lg">
+        <button type="submit" class="btn btn-xlarge btn-primary" onclick="location.href='interface.html'">
+        <span class="glyphicon glyphicon-retweet"> Join-to-help</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
     <!-- This is a templete, do any thing between this line and the next comment line -->
 
 
