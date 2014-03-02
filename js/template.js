@@ -1,3 +1,4 @@
+var loaderhtmlfilename = location.pathname.substring(location.pathname.lastIndexOf("/") + 1);
 WebFontConfig = {
     google: {
         families: ["Karla:400,400italic,700,700italic"]
