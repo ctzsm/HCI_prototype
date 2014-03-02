@@ -7,6 +7,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Schedule Your Life</title>
 
+
+
+    <script>
+    WebFontConfig = {
+        google: {
+            families: ["Karla:400,400italic,700,700italic"]
+        },
+        custom: {
+            families: ["SteelfishLtRegular"],
+            urls: ["css/fonts.css"]
+        }
+    };
+    (function() {
+        var wf = document.createElement("script");
+        wf.src = ("https:" == document.location.protocol ? "https" : "http") + "://ajax.googleapis.com/ajax/libs/webfont/1.4.2/webfont.js";
+        wf.type = "text/javascript";
+        wf.async = "true";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(wf, s)
+    })();
+    </script>
+
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -20,7 +43,7 @@
     <link href="css/interface.css" rel="stylesheet">
     <link href="css/bootstrap-social.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/template.css" rel="stylesheet">
+    <link href="css/meals.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -31,8 +54,102 @@
 </head>
 
 <body>
-    <!-- This is a templete, do any thing between this line and the next comment line -->
 
+    <div class="span4 text-center">
+        <div>Customize a new order:</div>
+        <div class="btn-group btn-group-vertical panel panel-default margin-base-vertical">
+            <div class="btn-toolbar">
+                <div class="btn-group btn-group-lg">
+                    <button type="submit" class="btn btn-large btn-primary" onclick="location.href='interface.html'">
+                        New Order
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="span4 text-center">
+        <div>Select a popular meal other people like:</div>
+        <div class="btn-group btn-group-vertical panel panel-default margin-base-vertical">
+            <div class="btn-toolbar">
+                <div class="btn-group btn-group-lg">
+                    <button type="submit" class="btn btn-large btn-primary" onclick="location.href='interface.html'">
+                        Noodle
+                    </button>
+                    <button type="submit" class="btn btn-large btn-primary" onclick="location.href='interface.html'">
+                        Pizza
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="span4 text-center">
+        <div>Select from my favorite:</div>
+        <div class="btn-group btn-group-vertical panel panel-default margin-base-vertical">
+            <div class="btn-toolbar">
+                <div class="btn-group btn-group-lg">
+                    <button type="submit" class="btn btn-large btn-primary" onclick="location.href='interface.html'">
+                        ChickenSack
+                    </button>
+                    <button type="submit" class="btn btn-large btn-primary" onclick="location.href='interface.html'">
+                        Subway
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="span4 text-center">
+        <div>My order history:</div>
+    </div>
+
+    <div class="panel panel-primary">
+        <div class="panel-heading">Burger King - Mar.02, 2014
+            <button type="submit" class="btn btn-small btn-primary" onclick="location.href='interface.html'" style="float: right;">
+                Edit
+            </button>
+        </div>
+
+        <div class="panel-body">
+            <ul>
+                <strong>
+                    <li>
+                        <span class=" glyphicon glyphicon-shopping-cart"></span>&nbsp;Sausage & Cheese Muffin Sandwich Meal
+                    </li>
+                    <li>
+                        <span class=" glyphicon glyphicon-time"></span>&nbsp;Mar.02, 2014 - 12:30 PM
+                    </li>
+                    <li>
+                        <span class=" glyphicon glyphicon-map-marker"></span>&nbsp;Engelhalt Room 325
+                    </li>
+                    <li>
+                        <span class=" glyphicon glyphicon-transfer"></span>&nbsp; Prepare to deliver
+                    </li>
+                </strong>
+            </ul>
+        </div>
+    </div>
+    <div class="panel panel-primary">
+        <div class="panel-heading">Koi - Mar.02, 2014</div>
+        <div class="panel-body">
+            <ul>
+                <strong>
+                    <li>
+                        <span class=" glyphicon glyphicon-shopping-cart"></span>&nbsp;Hot Pepper Chicken</li>
+                    <li>
+                        <span class=" glyphicon glyphicon-time"></span>&nbsp;Feb.22, 2014 - 6:30 PM
+                    </li>
+                    <li>
+                        <span class=" glyphicon glyphicon-map-marker"></span>&nbsp;Engelhalt Room 226
+                    </li>
+                    <li>
+                        <span class=" glyphicon glyphicon-transfer"></span>&nbsp; Delivered
+                    </li>
+                </strong>
+            </ul>
+        </div>
+    </div>
+
+    <!-- This is a templete, do any thing between this line and the next comment line -->
 
 
     <!-- DO NOT MODIFY THOSE FOLLOWING -->
