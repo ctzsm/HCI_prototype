@@ -55,51 +55,52 @@
 
 <body>
 
-    <div class="span4 text-center">
-        <div>Ask for official help from school, usually need 2 days to come:</div>
-        <div class="btn-group btn-group-vertical panel panel-default margin-base-vertical">
-            <div class="btn-toolbar">
-                <div class="btn-group btn-group-lg">
-                    <button type="submit" class="btn btn-xlarge btn-primary repair" onclick="location.href='maintenance-request.html'">
-                    <span class="glyphicon glyphicon-user"> Maintenance-Request</button>
-                </div>
+    <div class="span4 text-center"><h2>JOIN TO HELP</h2></div>
+    <form role="form">
+        <div class="form-group">
+            <label>*The problem types you may be able to help (Select all that applied):</label>
+<br>
+<input type="checkbox" name="checkbox1" value="checkbox">Electicity &nbsp;
+<input type="checkbox" name="checkbox2" value="checkbox">Heating &nbsp;
+<input type="checkbox" name="checkbox3" value="checkbox">Toilets&nbsp;
+<input type="checkbox" name="checkbox4" value="checkbox">Computers&nbsp;
+<input type="checkbox" name="checkbox4" value="checkbox">Networks&nbsp;
+<input type="checkbox" name="checkbox4" value="checkbox">Others:&nbsp; <textarea rows="1"></textarea>
+
+
+        </div>
+
+        <div class="form-group">
+            <label>*Apartment Building:</label>
+            <div class="btn-group">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                Engelhart<span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Engelhart</a></li>
+                <li><a href="#">Seabury</a></li>
+                <li><a href="#">McMaus</a></li>
+                </ul>
             </div>
         </div>
-    </div>
-    <div class="span4 text-center">
-        <div>Search for the frequently asked questions & answers:</div>
-        <div class="btn-group btn-group-vertical panel panel-default margin-base-vertical">
-            <div class="btn-toolbar">
-                <div class="btn-group btn-group-lg">
-                    <button type="submit" class="btn btn-xlarge btn-primary repair" onclick="location.href='repair.html'">
-                    <span class="glyphicon glyphicon-search"> Problems&Solutions</button>
-                </div>
-            </div>
+
+
+        <div class="form-group">
+            <label>*Would like to reveive messages of maintenance request via (Select all that applied):</label><br>
+            <input type="checkbox" name="checkbox4" value="checkbox">E-mail:&nbsp; <textarea rows="1" placeholder="Enter your e-mail Address"></textarea><br>
+            <input type="checkbox" name="checkbox4" value="checkbox">Phone Message:&nbsp; <textarea rows="1" placeholder="Enter your phone#"></textarea><br>
+            <input type="checkbox" name="checkbox4" value="checkbox">APP Notices
         </div>
-    </div>
-    <div class="span4 text-center">
-    <div>Ask for help from the students living in the same apartment:</div>
-        <div class="btn-group btn-group-vertical panel panel-default margin-base-vertical">
-            <div class="btn-toolbar">
-                <div class="btn-group btn-group-lg">
-                    <button type="submit" class="btn btn-xlarge btn-primary repair" onclick="location.href='ask-for-help.html'">
-                    <span class="glyphicon glyphicon-refresh"> Ask-for-help</button>
-                </div>
-            </div>
-        </div>
+    </form>
+
+    <div class="center">
+        <button class="btn btn-default" onclick="location.href='repair-submit.html'">Submit</button>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+        <button class="btn btn-default" onclick="location.href='repair.html'">Back</button>
     </div>
 
-    <div class="span4 text-center">
-        <div>Join to help the students living in the same apartment:</div>
-        <div class="btn-group btn-group-vertical panel panel-default margin-base-vertical">
-            <div class="btn-toolbar">
-                <div class="btn-group btn-group-lg">
-                    <button type="submit" class="btn btn-xlarge btn-primary repair" onclick="location.href='join-to-help.html'">
-                    <span class="glyphicon glyphicon-retweet"> Join-to-help</button>
-                </div>
-            </div>
-        </div>
-    </div>
+    <!-- DO NOT MODIFY THOSE FOLLOWING -->
+    <div id="include_navBar"></div>
 
 
 
