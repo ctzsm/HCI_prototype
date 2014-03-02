@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Schedule Your Life</title>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Google fonts -->
+    <script>
+    WebFontConfig = {
+        google: {
+            families: ["Karla:400,400italic,700,700italic"]
+        },
+        custom: {
+            families: ["SteelfishLtRegular"],
+            urls: ["css/fonts.css"]
+        }
+    };
+    (function() {
+        var wf = document.createElement("script");
+        wf.src = ("https:" == document.location.protocol ? "https" : "http") + "://ajax.googleapis.com/ajax/libs/webfont/1.4.2/webfont.js";
+        wf.type = "text/javascript";
+        wf.async = "true";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(wf, s)
+    })();
+    $(function() {
+        $("#include_navBar").load("navbar.html");
+    });
+    </script>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/interface.css" rel="stylesheet">
+    <link href="css/bootstrap-social.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+</head>
+
+<body>
+    <!-- This is a templete, do any thing between this line and the next comment line -->
+    <div class="btn-group">
+        <button type="button" class="btn btn-default">UPCOMING</button>
+        <button type="button" class="btn btn-default">HISTORY</button>
+
+        <div class="btn-group">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        All
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="#">ALL</a></li>
+                <li><a href="#">Engelhart</a></li>
+                <li><a href="#">Seabury</a></li>
+                <li><a href="#">McMaus</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="span4 text-center">
+        <div class="btn-group btn-group-vertical panel panel-default margin-base-vertical">
+            <div class="btn-toolbar">
+                <div class="btn-group btn-group-lg">
+                    <button type="submit" class="btn btn-xlarge btn-primary sign" class="btn btn-xlarge btn-primary sign" onclick="location.href='interface.html'">Post New!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-primary">
+        <div class="panel-heading">NBA Final GALA!</div>
+        <div class="panel-body">blablabla</div>
+    </div>
+    <div class="panel panel-primary">
+        <div class="panel-heading">MAHJONG</div>
+        <div class="panel-body">blablabla</div>
+    </div>
+    <div class="panel panel-primary">
+        <div class="panel-heading">LOL</div>
+        <div class="panel-body">blablabla</div>
+    </div>
+    <!-- DO NOT MODIFY THOSE FOLLOWING -->
+    <div id="include_navBar"></div>
+</body>
+
+</html>
