@@ -32,79 +32,101 @@
 
 <body>
     <!-- This is a templete, do any thing between this line and the next comment line -->
-    <div class="row">
-        <div class="col-md-1"></div>
-        <div class="col-md-10">
-            <div class="btn-group">
-                <button type="button" class="btn btn-default">UPCOMING</button>
-                <button type="button" class="btn btn-default">HISTORY</button>
-
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="col-xs-1 col-sm-1"></div>
+            <div class="col-xs-10 col-sm-10">
                 <div class="btn-group">
-                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                                All
-                        <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">ALL</a></li>
-                        <li><a href="#">Engelhart</a></li>
-                        <li><a href="#">Seabury</a></li>
-                        <li><a href="#">McMaus</a></li>
-                    </ul>
+                    <button type="button" class="btn btn-default">UPCOMING</button>
+                    <button type="button" class="btn btn-default">HISTORY</button>
+
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                            All
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">ALL</a>
+                            </li>
+                            <li><a href="#">Engelhart</a>
+                            </li>
+                            <li><a href="#">Seabury</a>
+                            </li>
+                            <li><a href="#">McMaus</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="span4 text-center">
-                <div class="btn-group btn-group-vertical panel panel-default margin-base-vertical">
-                    <div class="btn-toolbar">
-                        <div class="btn-group btn-group-lg">
-                            <button type="submit" class="btn btn-xlarge btn-primary sign" class="btn btn-xlarge btn-primary sign" onclick="location.href='activity-launch.html'">Post New!</button>
+                <div class="span4 text-center">
+                    <div class="btn-group btn-group-vertical panel panel-default margin-base-vertical">
+                        <div class="btn-toolbar">
+                            <div class="btn-group btn-group-lg">
+                                <button type="submit" class="btn btn-xlarge btn-primary sign" class="btn btn-xlarge btn-primary sign" onclick="location.href='activity-launch.html'">Post New!</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="panel panel-primary">
-                <div class="panel-heading">NBA GALA!</div>
-                <div class="panel-body">
-                    <ul>
-                        <strong>
-                        <li><span class=" glyphicon glyphicon-time"></span>02-02 20:00-22:00</li>
-                        <li><span class=" glyphicon glyphicon-map-marker"></span>Engelhalt Room 325</li>
-                        <li><span class=" glyphicon glyphicon-tag"></span>TAG: Basketball</li>
-                        <li><span class=" glyphicon glyphicon-phone"></span><abbr title="Phone">Tel:</abbr> (123) 456-7890</li>
-                        <button type="submit" class="btn btn-primary" onclick="location.href='activity-details.html'">See Details</button>
-                        </strong>
-                    </ul>
+
+                <div class="panel panel-primary">
+                    <div class="panel-heading">NBA GALA!</div>
+                    <div class="panel-body">
+                        <ul>
+                            <strong>
+                                <li>
+                                    <span class=" glyphicon glyphicon-time"></span>02-02 20:00-22:00</li>
+                                <li>
+                                    <span class=" glyphicon glyphicon-map-marker"></span>Engelhalt Room 325</li>
+                                <li>
+                                    <span class=" glyphicon glyphicon-tag"></span>TAG: Basketball</li>
+                                <li>
+                                    <span class=" glyphicon glyphicon-phone"></span>
+                                    <abbr title="Phone">Tel:</abbr>(123) 456-7890</li>
+                                <button type="submit" class="btn btn-primary" onclick="location.href='activity-details.html'">See Details</button>
+                            </strong>
+                        </ul>
+                    </div>
+                </div>
+                <div class="panel panel-primary">
+                    <div class="panel-heading">MAHJONG</div>
+                    <div class="panel-body">
+                        <ul>
+                            <strong>
+                                <li>
+                                    <span class=" glyphicon glyphicon-time"></span>02-04 21:00-23:00</li>
+                                <li>
+                                    <span class=" glyphicon glyphicon-map-marker"></span>Seabury Room 201</li>
+                                <li>
+                                    <span class=" glyphicon glyphicon-tag"></span>TAG:Table Game</li>
+                                <li>
+                                    <span class=" glyphicon glyphicon-phone"></span>
+                                    <abbr title="Phone">Tel:</abbr>(222) 333-4455</li>
+                                <button type="submit" class="btn btn-primary">See Details</button>
+                            </strong>
+                        </ul>
+                    </div>
+                </div>
+                <div class="panel panel-primary">
+                    <div class="panel-heading">LOL</div>
+                    <div class="panel-body">
+                        <ul>
+                            <strong>
+                                <li>
+                                    <span class=" glyphicon glyphicon-time"></span>02-04 14:00-15:00</li>
+                                <li>
+                                    <span class=" glyphicon glyphicon-map-marker"></span>Engelhalt Room 214</li>
+                                <li>
+                                    <span class=" glyphicon glyphicon-tag"></span>TAG: PC GAME</li>
+                                <li>
+                                    <span class=" glyphicon glyphicon-phone"></span>
+                                    <abbr title="Phone">Tel:</abbr>(999) 888-7766</li>
+                                <button type="submit" class="btn btn-primary">See Details</button>
+                            </strong>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="panel panel-primary">
-                <div class="panel-heading">MAHJONG</div>
-                <div class="panel-body">
-                    <ul>
-                        <strong>
-                        <li><span class=" glyphicon glyphicon-time"></span>02-04 21:00-23:00</li>
-                        <li><span class=" glyphicon glyphicon-map-marker"></span>Seabury Room 201</li>
-                        <li><span class=" glyphicon glyphicon-tag"></span>TAG:Table Game</li>
-                        <li><span class=" glyphicon glyphicon-phone"></span><abbr title="Phone">Tel:</abbr> (222) 333-4455</li>
-                        <button type="submit" class="btn btn-primary">See Details</button>
-                        </strong>
-                    </ul>
-                </div>
-            </div>
-            <div class="panel panel-primary">
-                <div class="panel-heading">LOL</div>
-                <div class="panel-body">
-                    <ul>
-                        <strong>
-                        <li><span class=" glyphicon glyphicon-time"></span>02-04 14:00-15:00</li>
-                        <li><span class=" glyphicon glyphicon-map-marker"></span>Engelhalt Room 214</li>
-                        <li><span class=" glyphicon glyphicon-tag"></span>TAG: PC GAME</li>
-                        <li><span class=" glyphicon glyphicon-phone"></span><abbr title="Phone">Tel:</abbr> (999) 888-7766</li>
-                        <button type="submit" class="btn btn-primary">See Details</button>
-                        </strong>
-                    </ul>
-                </div>
-            </div>
+            <div class="col-xs-1 col-sm-1"></div>
         </div>
-        <div class="col-md-1"></div>
     </div>
     <!-- DO NOT MODIFY THOSE FOLLOWING -->
     <div id="include_navBar"></div>

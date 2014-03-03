@@ -53,100 +53,102 @@
 </head>
 
 <body>
-    <div class="meal-font">
-        <div class="span4 text-left"></div>
-        <div class="span4 text-center">
-            <div class="btn-group btn-group-vertical panel panel-default">
-                <div class="btn-toolbar">
-                    <div class="btn-group btn-group-lg">
-                        <button type="submit" class="btn btn-large btn-primary" onclick="location.href='meals-create.html'">
-                            Customize a new order
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="span4 text-left">Select a popular meal other people like</div>
-        <p></p>
-        <div class="span4 text-center">
-            <div class="btn-group btn-group-vertical panel panel-default">
-                <div class="btn-toolbar">
-                    <div class="btn-group btn-group-regular">
-                        <button type="submit" class="btn btn-large btn-primary" onclick="location.href='meals-edit.html'">
-                            Noodle
-                        </button>
-                        <button type="submit" class="btn btn-large btn-primary" onclick="location.href='meals-edit.html'">
-                            Pizza
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="span4 text-left">Select from my favorite</div>
-        <p></p>
-        <div class="span4 text-center">
-            <div class="btn-group btn-group-vertical panel panel-default">
-                <div class="btn-toolbar">
-                    <div class="btn-group btn-group-regular">
-                        <button type="submit" class="btn btn-large btn-primary" onclick="location.href='meals-edit.html'">
-                            ChickenSack
-                        </button>
-                        <button type="submit" class="btn btn-large btn-primary" onclick="location.href='meals-edit.html'">
-                            Subway
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="span4 text-left">My Order History</div>
-        <p></p>
-        <div class="panel panel-primary collapse-group">
-            <div class="panel-heading">Burger King - Mar.02, 2014
-            </div>
-            <a class="btn" data-toggle="collapse" data-target="#viewdetails1">View details &raquo;</a>
-            <div class="panel-body collapse" id="viewdetails1">
-                <ul>
-                    <strong>
-                        <li>
-                            <span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;Sausage & Cheese Muffin Sandwich Meal
-                        </li>
-                        <li>
-                            <span class="glyphicon glyphicon-time"></span>&nbsp;Mar.02, 2014 - 12:30 PM
-                        </li>
-                        <li>
-                            <span class="glyphicon glyphicon-map-marker"></span>&nbsp;Engelhalt Room 325
-                        </li>
-                        <li>
-                            <span class="glyphicon glyphicon-transfer"></span>&nbsp; Prepare to deliver
-                            <button type="submit" class="btn btn-small btn-primary" onclick="location.href='meals-edit.html'" style="float: right;">
-                                Edit
+    <div class="container-fluid">
+        <div class="row-fluid meal-font">
+            <div class="span4 text-left"></div>
+            <div class="span4 text-center">
+                <div class="btn-group btn-group-vertical panel panel-default">
+                    <div class="btn-toolbar">
+                        <div class="btn-group btn-group-lg">
+                            <button type="submit" class="btn btn-large btn-primary" onclick="location.href='meals-create.html'">
+                                Customize a new order
                             </button>
-                        </li>
-                    </strong>
-                </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+            <div class="span4 text-left">Select a popular meal other people like</div>
+            <p></p>
+            <div class="span4 text-center">
+                <div class="btn-group btn-group-vertical panel panel-default">
+                    <div class="btn-toolbar">
+                        <div class="btn-group btn-group-regular">
+                            <button type="submit" class="btn btn-large btn-primary" onclick="location.href='meals-edit.html'">
+                                Noodle
+                            </button>
+                            <button type="submit" class="btn btn-large btn-primary" onclick="location.href='meals-edit.html'">
+                                Pizza
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="span4 text-left">Select from my favorite</div>
+            <p></p>
+            <div class="span4 text-center">
+                <div class="btn-group btn-group-vertical panel panel-default">
+                    <div class="btn-toolbar">
+                        <div class="btn-group btn-group-regular">
+                            <button type="submit" class="btn btn-large btn-primary" onclick="location.href='meals-edit.html'">
+                                ChickenSack
+                            </button>
+                            <button type="submit" class="btn btn-large btn-primary" onclick="location.href='meals-edit.html'">
+                                Subway
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        <div class="panel panel-primary">
-            <div class="panel-heading">Koi - Mar.02, 2014</div>
-            <a class="btn" data-toggle="collapse" data-target="#viewdetails2">View details &raquo;</a>
-            <div class="panel-body collapse" id="viewdetails2">
-                <ul>
-                    <strong>
-                        <li>
-                            <span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;Hot Pepper Chicken</li>
-                        <li>
-                            <span class="glyphicon glyphicon-time"></span>&nbsp;Feb.22, 2014 - 6:30 PM
-                        </li>
-                        <li>
-                            <span class="glyphicon glyphicon-map-marker"></span>&nbsp;Engelhalt Room 226
-                        </li>
-                        <li>
-                            <span class="glyphicon glyphicon-transfer"></span>&nbsp; Delivered
-                        </li>
-                    </strong>
-                </ul>
+            <div class="span4 text-left">My Order History</div>
+            <p></p>
+            <div class="panel panel-primary collapse-group">
+                <div class="panel-heading">Burger King - Mar.02, 2014
+                </div>
+                <a class="btn" data-toggle="collapse" data-target="#viewdetails1">View details &raquo;</a>
+                <div class="panel-body collapse" id="viewdetails1">
+                    <ul>
+                        <strong>
+                            <li>
+                                <span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;Sausage & Cheese Muffin Sandwich Meal
+                            </li>
+                            <li>
+                                <span class="glyphicon glyphicon-time"></span>&nbsp;Mar.02, 2014 - 12:30 PM
+                            </li>
+                            <li>
+                                <span class="glyphicon glyphicon-map-marker"></span>&nbsp;Engelhalt Room 325
+                            </li>
+                            <li>
+                                <span class="glyphicon glyphicon-transfer"></span>&nbsp; Prepare to deliver
+                                <button type="submit" class="btn btn-small btn-primary" onclick="location.href='meals-edit.html'" style="float: right;">
+                                    Edit
+                                </button>
+                            </li>
+                        </strong>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="panel panel-primary">
+                <div class="panel-heading">Koi - Mar.02, 2014</div>
+                <a class="btn" data-toggle="collapse" data-target="#viewdetails2">View details &raquo;</a>
+                <div class="panel-body collapse" id="viewdetails2">
+                    <ul>
+                        <strong>
+                            <li>
+                                <span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;Hot Pepper Chicken</li>
+                            <li>
+                                <span class="glyphicon glyphicon-time"></span>&nbsp;Feb.22, 2014 - 6:30 PM
+                            </li>
+                            <li>
+                                <span class="glyphicon glyphicon-map-marker"></span>&nbsp;Engelhalt Room 226
+                            </li>
+                            <li>
+                                <span class="glyphicon glyphicon-transfer"></span>&nbsp; Delivered
+                            </li>
+                        </strong>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
