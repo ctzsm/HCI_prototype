@@ -83,11 +83,11 @@
                 </div>
                 <div class="form-group">
                     <label>Time</label>
-                    <input type="time" class="form-control" name="mtime" placeholder="Enter Time" style="width: 230px;">
+                    <input type="time" class="form-control" name="mtime" style="width: 230px;">
                 </div>
                 <div class="form-group">
                     <label>Date</label>
-                    <input type="date" class="form-control" name="mdate" placeholder="Enter Date" style="width: 230px;">
+                    <input type="date" class="form-control" name="mdate" id="datePicker" style="width: 230px;">
                 </div>
                 <button type="submit" class="btn btn-default">Submit</button>
             </form>
@@ -113,6 +113,10 @@
             $("#mydropdown2").addClass("sr-only");
             $("#mydropdown3").removeClass("sr-only");
         }
+    });
+    $(document).ready(function() {
+        var a = new Date().toDateInputValue();
+        console.log(a.toString());
     })
     </script>
 
