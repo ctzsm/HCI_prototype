@@ -10,3 +10,9 @@
     font-family: helvetica, arial;
     font-size: 14px;
 }
+.circular {
+    width: 160px;
+    height: 160px;
+    border-radius: 80px;
+    /*background: url(http://link-to-your/image.jpg) no-repeat;*/
+}
