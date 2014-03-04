@@ -56,55 +56,59 @@
     <div class="span4 text-center">
         <h2>MAINTENANCE REQUEST</h2>
     </div>
-    <form role="form" class="meal-font">
-        <div class="form-group">
-            <label>*Problem Type:</label>
-            <br>
-            <input type="radio" id="radio1">Electicity
-            <input type="radio" id="radio2">Heating
-            <input type="radio" id="radio3">Toilets
-            <input type="radio" id="radio4">Computers
-            <input type="radio" id="radio5">Networks
-            <br>
-            <input type="radio" id="radio6">Others:
-            <textarea class="form-control" rows="1"></textarea>
-        </div>
-        <div class="form-group">
-            <label>*Problem Description:</label>
-            <textarea class="form-control" rows="3"></textarea>
-        </div>
-        <div class="form-group">
-            <label>*Apartment Building:</label>
-            <div class="btn-group">
-                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                    Engelhart
-                    <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu" role="menu">
-                    <li><a href="#">Engelhart</a>
-                    </li>
-                    <li><a href="#">Seabury</a>
-                    </li>
-                    <li><a href="#">McMaus</a>
-                    </li>
-                </ul>
+    <div class="container-fluid meal-font">
+        <div class="row-fluid">
+            <form role="form">
+                <div class="form-group">
+                    <label>*Problem Type:</label>
+                    <br>
+                    <input type="radio" id="radio1">&nbsp;Electicity
+                    <input type="radio" id="radio2">&nbsp;Heating
+                    <input type="radio" id="radio3">&nbsp;Toilets
+                    <input type="radio" id="radio4">&nbsp;Computers
+                    <input type="radio" id="radio5">&nbsp;Networks
+                    <br>
+                    <input type="radio" id="radio6">&nbsp;Others:
+                    <textarea class="form-control" rows="1"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>*Problem Description:</label>
+                    <textarea class="form-control" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>*Apartment Building:</label>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                            Engelhart
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Engelhart</a>
+                            </li>
+                            <li><a href="#">Seabury</a>
+                            </li>
+                            <li><a href="#">McMaus</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>*Room Number:</label>
+                    <input type="roomnumber" class="form-control" placeholder="Enter Room#">
+                </div>
+                <div class="form-group">
+                    <label>*Phone Number:</label>
+                    <input type="phonenumber" class="form-control" placeholder="Enter Phone#">
+                </div>
+            </form>
+            <div class="center">
+                <button class="btn btn-default" onclick="location.href='repair-submit.html'">Submit</button>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button class="btn btn-default" onclick="location.href='repair-maintenance-request.html'">Clear All</button>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button class="btn btn-default" onclick="location.href='repair.html'">Back</button>
             </div>
         </div>
-        <div class="form-group">
-            <label>*Room Number:</label>
-            <input type="roomnumber" class="form-control" placeholder="Enter Room#">
-        </div>
-        <div class="form-group">
-            <label>*Phone Number:</label>
-            <input type="phonenumber" class="form-control" placeholder="Enter Phone#">
-        </div>
-    </form>
-    <div class="center">
-        <button class="btn btn-default" onclick="location.href='repair-submit.html'">Submit</button>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <button class="btn btn-default" onclick="location.href='repair-maintenance-request.html'">Clear All</button>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <button class="btn btn-default" onclick="location.href='repair.html'">Back</button>
     </div>
 </body>
 
