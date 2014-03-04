@@ -28,7 +28,7 @@
     </script>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <!-- Google fonts -->
@@ -42,7 +42,6 @@
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/repair.css" rel="stylesheet">
     <link href="css/template.css" rel="stylesheet">
-    <link href="css/meals.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -152,6 +151,14 @@
             </div>
         </div>
     </div>
+
+    <script>
+    $(document).ready(function() {
+        var link = window.location.href;
+        var tokens = link.split("?");
+        var parameters = tokens[1].split("&");
+    })
+    </script>
     <!-- This is a templete, do any thing between this line and the next comment line -->
 
     <!-- DO NOT MODIFY THOSE FOLLOWING -->
