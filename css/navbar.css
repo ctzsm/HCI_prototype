@@ -1,0 +1,6 @@
+footer .navbar-collapse.in {
+    bottom: 70px;
+    position: absolute;
+    background-color:#333;
+    width:100%;
+}
