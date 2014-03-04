@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Schedule Your Life</title>
+    <link rel="stylesheet" type="text/css" href="css/default.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <script src="js/modernizr.custom.js"></script>
 
     <script>
     WebFontConfig = {
@@ -26,7 +29,7 @@
         s.parentNode.insertBefore(wf, s)
     })();
     </script>
-<!-- dsfdsf -->
+    <!-- dsfdsf -->
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
@@ -46,7 +49,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-
     <div class="container-fluid">
         <div class="row-fluid">
             <div class="span12 text-center">
@@ -60,7 +62,7 @@
                 <div class="btn-group btn-group-vertical panel panel-default margin-base-vertical">
                     <div class="btn-toolbar">
                         <div class="btn-group btn-group-lg">
-                            <button type="submit" class="btn btn-xlarge btn-primary sign" onclick="location.href='signin.html'">Sign In</button>
+                            <button class="btn btn-xlarge btn-primary md-trigger" data-modal="modal-1">Sign In</button>
                         </div>
                     </div>
                 </div>
@@ -69,7 +71,7 @@
                 <div class="btn-group btn-group-vertical panel panel-default margin-base-vertical">
                     <div class="btn-toolbar">
                         <div class="btn-group btn-group-lg">
-                            <button type="submit" class="btn btn-xlarge btn-primary sign">Sign Up</button>
+                            <button class="btn btn-xlarge btn-primary md-trigger" data-modal="modal-2">Sign Up</button>
                         </div>
                     </div>
                 </div>
@@ -91,6 +93,134 @@
             </div>
         </div>
     </div>
+    <div class="md-modal md-effect-16" id="modal-1">
+        <div class="container-fluid">
+            <form class="form-signin main-popup">
+                <h2 class="form-signin-heading">Sign In</h2>
+                <div class="form-group">
+                    <div>
+                        <input type="text" name="username" id="username" class="form-control" autofocus placeholder="Username" value="">
+                        <span class="help-block"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div>
+                        <input type="password" name="password" id="password" class="form-control" placeholder="Password" value="">
+                        <span class="help-block"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="btn btn-primary btn-lg btn-block" value="Sign In" onclick="location.href='activity.html'">
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="md-close btn btn-primary btn-lg btn-block" value="Cancel">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="md-modal md-effect-16" id="modal-2">
+        <div class="container-fluid">
+            <form class="form-signin main-popup">
+                <h2 class="form-signin-heading">Sign Up</h2>
+                <div class="form-group">
+                    <div>
+                        <input type="text" name="username" id="username" class="form-control" autofocus placeholder="Username" value="">
+                        <span class="help-block"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div>
+                        <input type="password" name="password" id="password" class="form-control" placeholder="Password" value="">
+                        <span class="help-block"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div>
+                        <input type="password" name="confirm password" id="password" class="form-control" placeholder="Confirm Password" value="">
+                        <span class="help-block"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="btn btn-primary btn-lg btn-block md-trigger md-close" data-modal="modal-3" value="Sign Up">
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="btn btn-primary btn-lg btn-block md-close" value="Cancel">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="md-modal md-effect-16" id="modal-3">
+        <div class="container-fluid">
+            <form class="form-signin  main-popup">
+                <div class="form-group">
+                    <h2 class="form-signin-heading">Registration Success, Thank You!</h2>
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="md-close btn btn-primary btn-lg btn-block" value="Close">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="md-overlay"></div>
+    <!-- the overlay element -->
+
+    <!-- classie.js by @desandro: https://github.com/desandro/classie -->
+    <script src="js/classie.js"></script>
+    <script src="js/modalEffects.js"></script>
+
+    <!-- for the blur effect -->
+    <!-- by @derSchepp https://github.com/Schepp/CSS-Filters-Polyfill -->
+    <script>
+    // this is important for IEs
+    var polyfilter_scriptpath = '/js/';
+    </script>
+    <script src="js/cssParser.js"></script>
+    <script src="js/css-filters-polyfill.js"></script>
+    <style>
+    .form-signin {
+        max-width: 330px;
+        padding: 15px;
+        margin: 0 auto;
+    }
+    .form-signin .form-signin-heading, {
+        margin-bottom: 10px;
+    }
+    .form-signin .form-control {
+        position: relative;
+        font-size: 16px;
+        height: auto;
+        padding: 10px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .form-signin .form-control:focus {
+        z-index: 2;
+    }
+    </style>
+    <script>
+    $(document).ready(function() {
+        $(".form-signin").submit(function() {
+            var flag = false;
+            $("div.form-group").removeClass("has-error");
+            $("span.help-block").text("");
+            if ($.trim($("#username").val()) == "") {
+                $("#username").parent().parent().addClass("has-error");
+                $("#username").val("");
+                $("#username").next().text("Username");
+            }
+            if ($.trim($("#password").val()) == "") {
+                $("#password").parent().parent().addClass("has-error");
+                $("#password").val("");
+                $("#password").next().text("Password");
+            }
+            return false;
+        });
+    });
+    </script>
 </body>
 
 </html>
