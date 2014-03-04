@@ -58,58 +58,63 @@
     <div class="span4 text-center">
         <h2>JOIN TO HELP</h2>
     </div>
-    <form role="form">
-        <div class="form-group">
-            <label>*The problem types you may be able to help (Select all that applied):</label>
-            <br>
-            <input type="checkbox" id="checkbox1">Electicity
-            <input type="checkbox" id="checkbox2">Heating
-            <input type="checkbox" id="checkbox3">Toilets
-            <input type="checkbox" id="checkbox4">Computers
-            <input type="checkbox" id="checkbox5">Networks
-            <br>
-            <input type="checkbox" id="checkbox6">Others:
-            <textarea rows="1"></textarea>
-        </div>
+    <div class="container-fluid meal-font">
+        <div class="row-fluid">
+            <div class="span4">
+                <form role="form" class="meal-font">
+                    <div class="form-group">
+                        <label>*The problem types you may be able to help (Select all that applied):</label>
+                        <br>
+                        <input type="checkbox" id="checkbox1">Electicity
+                        <input type="checkbox" id="checkbox2">Heating
+                        <input type="checkbox" id="checkbox3">Toilets
+                        <input type="checkbox" id="checkbox4">Computers
+                        <input type="checkbox" id="checkbox5">Networks
+                        <br>
+                        <input type="checkbox" id="checkbox6">Others:
+                        <textarea class="form-control" rows="1"></textarea>
+                    </div>
 
-        <div class="form-group">
-            <label>*Apartment Building:</label>
-            <div class="btn-group">
-                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                    Engelhart
-                    <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu" role="menu">
-                    <li><a href="#">Engelhart</a>
-                    </li>
-                    <li><a href="#">Seabury</a>
-                    </li>
-                    <li><a href="#">McMaus</a>
-                    </li>
-                </ul>
+                    <div class="form-group">
+                        <label>*Apartment Building:</label>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                Engelhart
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Engelhart</a>
+                                </li>
+                                <li><a href="#">Seabury</a>
+                                </li>
+                                <li><a href="#">McMaus</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>*Would like to reveive messages of maintenance request via (Select all that applied):</label>
+                        <br>
+                        <input type="checkbox" id="checkbox7">E-mail:&nbsp;
+                        <textarea class="form-control" rows="1" placeholder="Enter your e-mail Address"></textarea>
+                        <br>
+                        <input type="checkbox" id="checkbox8">Phone:&nbsp;
+                        <textarea class="form-control" rows="1" placeholder="Enter your phone#"></textarea>
+                        <br>
+                        <input type="checkbox" id="checkbox9">APP Notices
+                    </div>
+                </form>
+
+                <div class="center">
+                    <button class="btn btn-default" onclick="location.href='repair-submit.html'">Submit</button>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button class="btn btn-default" onclick="location.href='repair-join-to-help.html'">Clear All</button>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button class="btn btn-default" onclick="location.href='repair.html'">Back</button>
+                </div>
             </div>
         </div>
-
-
-        <div class="form-group">
-            <label>*Would like to reveive messages of maintenance request via (Select all that applied):</label>
-            <br>
-            <input type="checkbox" id="checkbox7">E-mail:&nbsp;
-            <textarea rows="1" placeholder="Enter your e-mail Address"></textarea>
-            <br>
-            <input type="checkbox" id="checkbox8">Phone:&nbsp;
-            <textarea rows="1" placeholder="Enter your phone#"></textarea>
-            <br>
-            <input type="checkbox" id="checkbox9">APP Notices
-        </div>
-    </form>
-
-    <div class="center">
-        <button class="btn btn-default" onclick="location.href='repair-submit.html'">Submit</button>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <button class="btn btn-default" onclick="location.href='repair-join-to-help.html'">Clear All</button>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <button class="btn btn-default" onclick="location.href='repair.html'">Back</button>
     </div>
 </body>
 
