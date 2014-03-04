@@ -31,7 +31,7 @@
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <!-- Google fonts -->
@@ -43,7 +43,7 @@
     <link href="css/interface.css" rel="stylesheet">
     <link href="css/bootstrap-social.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/repair.css" rel="stylesheet">
+    <link href="css/template.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -55,7 +55,9 @@
 
 <body>
     <div id="include_navBar"></div>
-    <div class="span4 text-center"><h2>JOIN TO HELP</h2></div>
+    <div class="span4 text-center">
+        <h2>JOIN TO HELP</h2>
+    </div>
     <form role="form">
         <div class="form-group">
             <label>*The problem types you may be able to help (Select all that applied):</label>
@@ -64,38 +66,49 @@
             <input type="checkbox" id="checkbox2">Heating
             <input type="checkbox" id="checkbox3">Toilets
             <input type="checkbox" id="checkbox4">Computers
-            <input type="checkbox" id="checkbox5">Networks<br>
-            <input type="checkbox" id="checkbox6">Others:<textarea rows="1"></textarea>
+            <input type="checkbox" id="checkbox5">Networks
+            <br>
+            <input type="checkbox" id="checkbox6">Others:
+            <textarea rows="1"></textarea>
         </div>
 
         <div class="form-group">
             <label>*Apartment Building:</label>
             <div class="btn-group">
                 <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                Engelhart<span class="caret"></span>
+                    Engelhart
+                    <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Engelhart</a></li>
-                <li><a href="#">Seabury</a></li>
-                <li><a href="#">McMaus</a></li>
+                    <li><a href="#">Engelhart</a>
+                    </li>
+                    <li><a href="#">Seabury</a>
+                    </li>
+                    <li><a href="#">McMaus</a>
+                    </li>
                 </ul>
             </div>
         </div>
 
 
         <div class="form-group">
-            <label>*Would like to reveive messages of maintenance request via (Select all that applied):</label><br>
-            <input type="checkbox" id="checkbox7">E-mail:&nbsp; <textarea rows="1" placeholder="Enter your e-mail Address"></textarea><br>
-            <input type="checkbox" id="checkbox8" >Phone:&nbsp; <textarea rows="1" placeholder="Enter your phone#"></textarea><br>
+            <label>*Would like to reveive messages of maintenance request via (Select all that applied):</label>
+            <br>
+            <input type="checkbox" id="checkbox7">E-mail:&nbsp;
+            <textarea rows="1" placeholder="Enter your e-mail Address"></textarea>
+            <br>
+            <input type="checkbox" id="checkbox8">Phone:&nbsp;
+            <textarea rows="1" placeholder="Enter your phone#"></textarea>
+            <br>
             <input type="checkbox" id="checkbox9">APP Notices
         </div>
     </form>
 
     <div class="center">
         <button class="btn btn-default" onclick="location.href='repair-submit.html'">Submit</button>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <button class="btn btn-default" onclick="location.href='repair-join-to-help.html'">Clear All</button>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <button class="btn btn-default" onclick="location.href='repair.html'">Back</button>
     </div>
 </body>
