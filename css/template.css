@@ -3,9 +3,9 @@
     font-size: 14px;
 }
 .circular {
-    width: 160px;
-    height: 160px;
-    border-radius: 80px;
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
 }
 .repair {
     width: 240px;
